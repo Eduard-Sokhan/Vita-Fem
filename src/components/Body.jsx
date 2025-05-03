@@ -22,17 +22,17 @@ const Body = () => {
                             />
 
                             {/* Текст */}
-                            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mx-auto">
+                            <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center mx-auto">
                                 <span className="text-red-700 whitespace-nowrap">ПРИВАТНА МЕДИЧНА УСТАНОВА</span>
                                 {" "}
                                 &quot;Vita<span className="text-red-700">Fem</span>&quot;
                             </h1>
+
                         </div>
                     </div>
 
-
                     <div className="w-full max-w-[760px] text-left">
-                        <div className="text-lg sm:text-xl lg:text-2xl font-bold mb-6">
+                        <div className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold mb-6">
                             <p>Акушерство</p>
                             <p>Гінекологія</p>
                             <p>Ультразвукова діагностика</p>
@@ -49,12 +49,16 @@ const Body = () => {
 
                             <div className="flex flex-wrap justify-center lg:mt-12">
                                 <div
-                                    className="text-red-700 flex items-center justify-center text-sm sm:text-base md:text-lg gap-4">
-                                    <p className="font-semibold">Пн-Пт: 8:30 - 20:30</p>
-                                    <p className="font-semibold">Сб: 9:00 - 20:00</p>
-                                    <p className="font-semibold">Нд: 10:30 - 17:30</p>
+                                    className="text-red-700 flex items-center justify-center text-xs sm:text-sm md:text-base lg:text-lg gap-4">
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg">Пн-Пт: 8:30
+                                        - 20:30</p>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg">Сб: 9:00 -
+                                        20:00</p>
+                                    <p className="font-semibold text-xs sm:text-sm md:text-base lg:text-lg">Нд: 10:30 -
+                                        17:30</p>
                                 </div>
                             </div>
+
 
                             <div
                                 className="flex flex-col sm:flex-row sm:space-y-4 lg:space-y-0 sm:space-x-0 lg:space-x-4 justify-center gap-4 mt-8 lg:mt-12">
@@ -63,16 +67,23 @@ const Body = () => {
                                     text="ЗАПИСАТИСЬ НА ПРИЙОМ"
                                     bgColor="bg-red-700"
                                     hoverColor="hover:bg-red-600"
+                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl min-[300px]:text-xs min-[300px]:py-1 min-[300px]:px-2" // Зменшуємо вдвічі для екранів менше 300px
                                 />
                                 <Button
                                     href="tel:+380507696279"
-                                    text="ТЕЛЕФОНУЙТЕ 050 769 62 79"
+                                    text={
+                                        <>
+                                            ТЕЛЕФОНУЙТЕ <br/>
+                                            050 769 62 79
+                                        </>
+                                    }
                                     phoneNumber={true}
                                     bgColor="bg-green-700"
                                     hoverColor="hover:bg-green-600"
+                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl min-[300px]:text-xs min-[300px]:py-1 min-[300px]:px-2" // Зменшуємо вдвічі для екранів менше 300px
                                 />
-
                             </div>
+
 
                         </div>
                     </div>

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100dvw;
+    width: 100vw; /* Використовувати 100vw замість 100dvw */
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Забороняє горизонтальний скрол */
+}
+
+html {
+    overflow-x: hidden; /* Можна додати ще для html, щоб забезпечити глобальну заборону скролу */
 }
