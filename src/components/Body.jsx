@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../../public/logo.png";
 import photo1 from "../assets/photo1.png";
 import photo2 from "../assets/photo2.jpg";
 import photo3 from "../assets/photo3.jpg";
@@ -14,14 +14,12 @@ const Body = () => {
                 >
                     <div className="flex justify-center items-center relative">
                         <div className="flex flex-col items-center">
-                            {/* Логотип */}
                             <img
                                 src={logo}
                                 alt="Logo"
-                                className="w-[200%] sm:w-[100%] md:w-[80%] lg:w-[60%] mb-4"  // Збільшили розмір лого
+                                className="w-[200%] sm:w-[100%] md:w-[80%] lg:w-[60%] mb-4"
                             />
 
-                            {/* Текст */}
                             <h1 className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center mx-auto">
                                 <span className="text-red-700 whitespace-nowrap">ПРИВАТНА МЕДИЧНА УСТАНОВА</span>
                                 {" "}
@@ -41,7 +39,6 @@ const Body = () => {
                             <p>Та інше</p>
                         </div>
 
-                        {/* Графік роботи */}
                         <div className="mt-12">
                             <h3 className="text-2xl sm:text-3xl lg:text-2xl font-bold text-center min-[1300px]:text-center text-red-700">
                                 Графік роботи
@@ -67,7 +64,7 @@ const Body = () => {
                                     text="ЗАПИСАТИСЬ НА ПРИЙОМ"
                                     bgColor="bg-red-700"
                                     hoverColor="hover:bg-red-600"
-                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl min-[300px]:text-xs min-[300px]:py-1 min-[300px]:px-2" // Зменшуємо вдвічі для екранів менше 300px
+                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl min-[300px]:text-xs min-[300px]:py-1 min-[300px]:px-2"
                                 />
                                 <Button
                                     href="tel:+380507696279"
@@ -80,7 +77,7 @@ const Body = () => {
                                     phoneNumber={true}
                                     bgColor="bg-green-700"
                                     hoverColor="hover:bg-green-600"
-                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl min-[300px]:text-xs min-[300px]:py-1 min-[300px]:px-2" // Зменшуємо вдвічі для екранів менше 300px
+                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl min-[300px]:text-xs min-[300px]:py-1 min-[300px]:px-2"
                                 />
                             </div>
 
@@ -90,10 +87,8 @@ const Body = () => {
                 </div>
             </div>
 
-            {/* Контейнер з картинками */}
             <div className="flex flex-col justify-center items-center mt-8 gap-16 px-4 sm:px-6 lg:px-8">
 
-                {/* Блок 1: Лікар */}
                 <div
                     className="bg-[#f4f4f4] shadow-lg rounded-xl overflow-hidden w-full max-w-6xl flex flex-col items-center p-6 sm:p-8 gap-6">
                     <img
@@ -113,7 +108,6 @@ const Body = () => {
                     </div>
                 </div>
 
-                {/* Блок 2: Гінекологія */}
                 <div
                     className="bg-[#f4f4f4] shadow-lg rounded-xl overflow-hidden w-full max-w-6xl flex flex-col lg:flex-row items-center gap-6 p-6 sm:p-8">
                     <img
@@ -141,7 +135,6 @@ const Body = () => {
                     </div>
                 </div>
 
-                {/* Блок 3: УЗД */}
                 <div
                     className="bg-[#f4f4f4] shadow-lg rounded-xl overflow-hidden w-full max-w-6xl flex flex-col lg:flex-row items-center gap-6 p-6 sm:p-8">
                     <img

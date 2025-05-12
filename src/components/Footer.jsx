@@ -4,7 +4,6 @@ const Footer = () => {
     return (
         <footer className="bg-neutral-700 text-white p-8 mt-12">
             <div className="container mx-auto flex flex-wrap justify-between">
-                {/* Перший контейнер */}
                 <div className="flex flex-col space-y-2 w-full sm:w-1/3 text-center sm:text-left">
                     <h3 className="font-semibold text-lg sm:text-xl text-white mb-2">
                         <FaUserMd className="inline mr-2" /> Послуги
@@ -28,7 +27,6 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                {/* Другий контейнер */}
                 <div className="flex flex-col space-y-2 w-full sm:w-1/3 text-center sm:text-left">
                     <h3 className="font-semibold text-lg sm:text-xl text-white mb-2">
                         <FaEnvelope className="inline mr-2"/> Контакти
@@ -50,13 +48,9 @@ const Footer = () => {
 
                     <p className="text-sm sm:text-base">
                         <FaPhoneAlt className="inline mr-2"/>Телефон 1:
-                        <a
-                            href="mailto:medicineuzh@ukr.net"
-                            className="text-green-400 hover:text-green-600 transition-all ml-1"
-                        >
-                            medicineuzh@ukr.net
+                        <a href="tel:+380507696279" className="text-green-400 hover:text-green-600 transition-all ml-1">
+                            +380507696279
                         </a>
-
                     </p>
                     <p className="text-sm sm:text-base">
                         <FaPhoneAlt className="inline mr-2"/>Телефон 2:
@@ -66,7 +60,6 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* Третій контейнер (Інтерактивна карта) */}
                 <div className="flex justify-center w-full sm:w-1/3">
                     <div className="w-full max-w-3xl h-64 rounded-lg overflow-hidden shadow-lg flex justify-center">
                         <iframe
@@ -84,7 +77,6 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Нижня частина футера */}
             <div className="mt-12 text-center text-sm sm:text-base text-white">
                 <p>© {new Date().getFullYear()} Vitafem. Всі права захищені.</p>
             </div>

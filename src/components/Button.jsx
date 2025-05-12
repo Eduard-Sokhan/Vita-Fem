@@ -20,7 +20,6 @@ const Button = ({ href, text, phoneNumber = false, bgColor = "bg-red-700", hover
     );
 };
 
-// Валідація пропсів
 Button.propTypes = {
     href: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
@@ -29,4 +28,4 @@ Button.propTypes = {
     hoverColor: PropTypes.string
 };
 
-export default Button; // Важливо, щоб це було default
+export default Button;

@@ -14,11 +14,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw; /* Використовувати 100vw замість 100dvw */
+    width: 100vw;
     height: 100%;
-    overflow-x: hidden; /* Забороняє горизонтальний скрол */
+    overflow-x: hidden;
 }
 
 html {
-    overflow-x: hidden; /* Можна додати ще для html, щоб забезпечити глобальну заборону скролу */
+    overflow-x: hidden;
 }
